@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<style type="text/css">
+		html{
+			font-size: 12px
+		}
+		body{
+			background-color: #F5D76E;
+		}
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: black;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2rem;
+			border-bottom:1px solid white;
+			color:white;
+
+		}
+		#logoNav{
+			font-size: 2rem;
+			font-weight: bold;
+			}
+			/* Landing section below for mobile*/
+		#landing{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+		}
+		#message{
+			text-align: center;
+			font-family: Dosis;
+			font-size: 5rem;
+			margin: 50px 20px;
+		}
+		/* Cards section below for mobile*/
+		.cards{
+			display:flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.card{
+			flex:1;
+			background-color: #d3d3d3;
+			margin:50px 20px;
+			padding:20px;
+		}
+		.card h2{
+			padding: 5px 0 10px 0;
+			font-size: 3rem;
+			font-family: dosis;
+		}
+		.card img{
+			width:100%;
+		}
+		.card p{
+			font-family: dosis;
+			font-size: 1.7rem;
+		}
+		@media screen and (min-width: 700px){
+			nav{
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: flex-end;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			a{
+				border:none;
+
+			}
+			#logoNav{
+				flex: 5;
+				text-align: left;
+			}
+
+			#landing{
+				flex-direction: row;
+				width: 80%;
+				margin: 100px;
+			}
+			.cards{
+				flex-flow: row wrap;
+			}
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+
+	<section id="landing">
+		<div id="message">
+			<h2>Make Creative Clever Fun Apps. Simple.</h2>
+		</div>
+		<div id="graphic"><img src="/Users/Henry/Documents/Coding/Stream 1/Semantic/files-l8/Challenge1/img/laptop.png"/></div>
+	</section>
+
+	<section class="cards">
+		<div class="card">
+			<img src="/Users/Henry/Documents/Coding/Stream 1/Semantic/files-l8/Challenge1/img/graphic1.png" alt="">
+			<h2>Info Box 1</h2>
+			<p>Work permits are among the post-Brexit migration curbs being considered but any changes must be good for the UK economy, the home secretary has said. Amber Rudd told the BBC the work permit proposal "certainly has value" but nothing was being ruled out.</p>
+		</div>
+		<div class="card">
+			<img src="/Users/Henry/Documents/Coding/Stream 1/Semantic/files-l8/Challenge1/img/graphic2.png" alt="">
+			<h2>Info Box 2</h2>
+			<p>Double Paralympic medallist Kadeena Cox hopes her achievements in Rio can inspire fellow black athletes.The Briton, who had a stroke aged 23 which led to her being diagnosed with multiple sclerosis (MS), won athletics bronze in the T38 100m and gold in cycling's C4-5 time trial.</p>
+		</div>
+		<div class="card">
+			<img src="/Users/Henry/Documents/Coding/Stream 1/Semantic/files-l8/Challenge1/img/graphic3.png" alt="">
+			<h2>Info Box 3</h2>
+			<p>Steve Cummings won the Tour of Britain as he safely negotiated the final stage in London. It is only the second time a Briton has won the event since its 2004 rebrand, after Sir Bradley Wiggins in 2013.</p>
+		</div>
+	</section>
+</body>
+</html>

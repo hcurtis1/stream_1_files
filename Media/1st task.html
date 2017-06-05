@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Task</title>
+	<style type="text/css">
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+	}
+	.box{
+		display:inline-block;
+		border: 5px solid blue;
+		margin: 10px;
+		border-radius: 10px
+	}
+	#sepia img{
+		-webkit-filter: sepia(1);
+	}
+	#blur img{
+		-webkit-filter: blur(5px);
+	}
+	#contrast img{
+		-webkit-filter: contrast(5);
+	}
+	#video{
+
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<h2>Original</h2>
+			<img src="http://www.indianfunpic.com/wp-content/uploads/2016/06/Funny-Kids-1.jpg" alt="weird thing" height="250" width="250"/>
+		</div>
+		<div class="box" id="sepia">
+			<h2>Sepia</h2>
+			<img src="http://www.indianfunpic.com/wp-content/uploads/2016/06/Funny-Kids-1.jpg" alt="Fat Kid" height="250" width="250"/>
+		</div>
+		<div class="box" id="blur">
+			<h2>Blur</h2>
+			<img src="http://www.indianfunpic.com/wp-content/uploads/2016/06/Funny-Kids-1.jpg" alt="weird thing" height="250" width="250"/>
+		</div>
+		<div class="box" id="contrast">
+			<h2>Contrast</h2>
+			<img src="http://www.indianfunpic.com/wp-content/uploads/2016/06/Funny-Kids-1.jpg" alt="Fat Kid" height="250" width="250"/>
+		</div>
+		<div class="box" id="video">
+			<h2> Here is my video</h2>
+			<video controls="controls" autoplay width="550">
+				<source src="/Users/Henry/Documents/Phone Media/Phone SD Card/20140614_150515.mp4" type="video/mp4">
+			</video>
+			<audio controls="controls">
+				<source src="/Users/Henry/Documents/Coding/Stream 1/Media/Lesson File/files-l4/audio/tail.mp3" type="audio/mp3; codecs=mp3"/>
+				<source src="/Users/Henry/Documents/Coding/Stream 1/Media/Lesson File/files-l4/audio/beats.ogg" type="audio/ogg; codecs=ogg"/>
+			</audio>
+		</div>
+	</div>
+</body>
+</html>

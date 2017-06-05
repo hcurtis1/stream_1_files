@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Basic Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="/Users/Henry/Documents/Coding/Stream 1/Bootstrap/files-l15/bootstrap/css/bootstrap.min.css"></link>
+		<style type="text/css">
+			#tops{
+				margin-top: 50px;
+			}
+			/*==================================================
+			=            Bootstrap 3 Media Queries             =
+			==================================================*/
+			/* Large desktops and laptops */
+			@media (min-width: 1200px) {
+			// css specific properties col-lg-*
+			}
+			 
+			/* Landscape tablets and medium desktops */
+			@media (min-width: 992px) and (max-width: 1199px) {
+			// css specific properties col-md-*
+			}
+			 
+			/* Portrait tablets and small desktops */
+			@media (min-width: 768px) and (max-width: 991px) {
+			// css specific properties col-sm-*
+			}
+			 
+			/* Landscape phones and portrait tablets */
+			@media (max-width: 767px) {
+			// css specific properties col-xs-*
+			}
+			 
+			/* Portrait phones and smaller */
+			@media (max-width: 480px) {
+			// css specific properties col-xs-* or none for default
+			}
+			footer{
+				text-align: center;
+				height:100px;
+				background-color: #eee;
+				padding:5px;
+			}
+		</style>
+	</head>
+	<body>
+	<!-- Jumbo Tron-->
+		<div class="jumbotron">
+			<div class="container">
+				<h2>This is where I have loads of bootstrap Stuff</h1>
+				<p> Use all the below and check the code to see what features there are in bootstrap. Also follow this <a href="http://getbootstrap.com/components/#glyphicons">link</a> for more useful bootstrap stuff!!
+			</div>
+		</div>
+	<!--Nav bar code-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">CHOCOBLOK!</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsinglist">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+				</div>
+				<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myCollapsinglist">
+					<li><a href="#"> Home </a></li>
+					<li><a href="#"> About </a></li>
+					<li><a href="#"> Portfolio </a></li>
+					<li><a href="#"> Contact </a></li>
+				</ul>
+			</div>
+		</div>
+	<!--Second practice Nav -->
+		<div class="container" id="tops">
+			<nav class="hidden-xs">
+				<ul class="nav nav-justified">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	<!--Content Rows -->
+		<div class="container">	
+			<div class="row" id="top">
+				<div class="col-xs-12 col-sm-4">
+					<h2>Hello</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#" class="btn btn-success btn-lg">Learn More</a>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<h2>Hi</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#" class="btn btn-danger btn-default">Learn More</a>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<h2>Christ</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#" class="btn btn-primary btn-sm">Learn More</a>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-3">
+					<h4>Javascript</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Python</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Django</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Github</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>SQL</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-sm-6">
+					<h2>FTP</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Full Stack Development</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Panel content below -->
+		<div class="panel panel-success">  
+			<div class="panel-heading">    
+				<h3 class="panel-title">Panel title</h3>  
+			</div>  
+			<div class="panel-body"> 
+				<p>Panel content  </p>
+			</div>
+ 		</div>
+		<footer class="col-xs-12">
+			<h2>This is a wicked footer</h2>
+			<p>No seriously bro</p>
+		</footer>
+	</body>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</html>

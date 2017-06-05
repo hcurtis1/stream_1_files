@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gradients</title>
+	<style type="text/css">
+	div{
+		margin-left: auto;
+		margin-right: auto;
+		width:1000px;
+		height: 200px;
+		border-radius: 30px 30px 0 0;
+		box-shadow: 10px 10px 5px #888888;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#linear{
+		background: linear-gradient(to top, #00ff11, #eeef00);
+	}
+	#multiple{
+		background: linear-gradient(to right, #996633 1%, #70121b 10%, #380038 30%, #f1ebe3 100%);
+	}
+	#trans{
+		background: linear-gradient(to right, rgba(23,104,39,0.2), rgba(0,0,0,0));
+	}
+	#radial{
+		background: radial-gradient(#dcfff5,#67c4a7);
+	}
+	h1{
+		padding-top: 85px;
+	}
+	</style>
+</head>
+<body>
+		<div id="linear"><h1>LINEAR</h1></div>
+		<div id="multiple"><h1>MULTIPLE</h1></div>
+		<div id="trans"><h1>TRANS</h1></div>
+		<div id="radial"><h1>RADIAL</h1></div>
+</body>
+</html>

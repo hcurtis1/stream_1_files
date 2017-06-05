@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Transforms</title>
+	<style type="text/css">
+	div{
+		margin-right: auto;
+		margin-left: auto;
+		width: 500px;
+		border-radius: 20px;
+		border: 5px solid black;
+		text-align: center;
+	}
+	div:hover {
+		transition: background-color 3s ease-out, color 3s ease-in 3s, box-shadow 3s ease-in 3s;
+		background-color: red;
+		color: green;
+		box-shadow: 5px 5px blue;
+	}
+	#box{
+
+	}
+	#translate{
+		transform: translate(-200px, 0);
+	}
+	#rotate{
+		margin-top: 180px;
+		transform: rotate(45deg);
+	}
+	#scaled{
+		margin-top: 50px;
+		transform: scale(2, 1.5);
+	}
+	#skew{
+		margin-top: 190px;
+		transform: skew(0deg, 30deg);
+	}
+	</style>
+</head>
+<body>
+	<div id="box"><h1>Box</h1></div>
+	<div id="translate"><h1>I am Translated</h1></div>
+	<div id="rotate"><h1>I am Rotated</h1></div>
+	<div id="scaled"><h1>I am Scaled</h1></div>
+	<div id="skew"><h1>I am Skewed</h1></div>
+</body>
+</html>
